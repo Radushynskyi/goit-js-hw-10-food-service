@@ -25,9 +25,8 @@ function handleSavedThemes() {
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme === 'dark-theme') {
       refs.inputCheckbox.checked = true;
-    }
-    refs.body.classList.add(savedTheme);
-    if (savedTheme) {
+    }else if (savedTheme) {
       refs.body.classList.replace(savedTheme, Theme.LIGHT);
     }
+    refs.body.classList.add(savedTheme);
 }
