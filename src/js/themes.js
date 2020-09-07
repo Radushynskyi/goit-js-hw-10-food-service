@@ -27,7 +27,7 @@ function handleSavedThemes() {
       refs.inputCheckbox.checked = true;
     }
     refs.body.classList.add(savedTheme);
-    if (savedTheme === null) {
+    if (savedTheme) {
       refs.body.classList.replace(savedTheme, Theme.LIGHT);
     }
 }
